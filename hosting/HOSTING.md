@@ -44,6 +44,22 @@ cd ../../beginner-kestrel-point/src && python solve.py ../dist/postcard.png LAMP
 
 ---
 
+## Live deployment: Render (free), the permanent link
+
+**https://gdg-ctf.onrender.com** (deployed from the private repo `raykon6/gdg-ctf`, branch `main`).
+
+How it was set up:
+1. Push this folder to a **private** GitHub repo.
+2. Go to render.com, sign in with GitHub, then **Blueprints → New Blueprint Instance**, pick the repo, name it `gdg-ctf`, and click **Deploy Blueprint**.
+   Render reads `render.yaml`: Docker, free plan, Singapore, health check `/healthz`.
+3. Every `git push` to `main` redeploys automatically (about 1 minute).
+
+What to know about it:
+- **Free plan sleep:** after about 15 minutes with no visitors the service spins down, and the next visit waits up to about 50 s. Open the link yourself before sharing it or starting the event.
+- **Attempt counters** live in memory, so they reset whenever the service restarts or sleeps.
+- **Not deployed:** `.dockerignore` keeps solutions, `src/`, the solution PDF and CTFd configs out of the image. On 2026-11-10 I checked that solution, flag-file and `.git` paths all return 404 and that the real flag appears nowhere on the portal or board.
+- **Player IPs:** behind Render's proxy the server uses the **last** `X-Forwarded-For` entry (the one the proxy adds), so a forged header can't reset the attempt limit.
+
 ## Option A: everything in one container (recommended for a club event)
 
 ```bash

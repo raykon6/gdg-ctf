@@ -12,7 +12,9 @@
 | Walkthrough | [SOLUTION.md](beginner-kestrel-point/SOLUTION.md) | [SOLUTION.md](advanced-chakravyuh/SOLUTION.md) |
 | Flag | `GDG{l1ght_th3_w4y_thr0ugh_th3_l4y3rs}` | `GDG{4bh1m4nyu_f0und_th3_3x1t_v14_m0dbu5}` |
 
-Hosting: [hosting/HOSTING.md](hosting/HOSTING.md) covers a one-container portal, CTFd, and a Google Drive link.
+**Live:** https://gdg-ctf.onrender.com (portal), with the Waypoint board at https://gdg-ctf.onrender.com/waypoint. It's hosted on Render's free plan from this repo via `render.yaml`, and the first visit after about 15 idle minutes takes up to a minute to wake.
+
+Hosting: [hosting/HOSTING.md](hosting/HOSTING.md) covers Render, a one-container portal, CTFd, and a Google Drive link.
 
 ## Layout
 
