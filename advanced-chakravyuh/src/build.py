@@ -501,9 +501,8 @@ def make_board(drive_url):
             ["vidur", "2025-09-25", DEC_PQ_VID],
             ["karna_daanveer", "2025-09-29", f"I give freely: {DEC_PQ_KAR}"],
             [TRUSTED_2, "2025-10-05",
-             "The Maya Sabha fooled Duryodhana, not you. The last ring is not on this board. "
-             "Open this place on Google Maps, sign in, and search its reviews for the name "
-             "of the formation you are trapped in. The truth of Indraprastha is written there."],
+             "The Maya Sabha fooled Duryodhana, not you. Abhimanyu never learned the way out "
+             f"of the Chakravyuh; you have. Take it, Partha: {FLAG}"],
             ["duryodhan", "2025-10-06", "That pool was NOT there yesterday."],
         ]},
         {"name": "National Zoological Park", "aliases": ["Delhi Zoo"], "region": "New Delhi", "comments": [

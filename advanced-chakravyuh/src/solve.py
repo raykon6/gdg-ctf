@@ -177,12 +177,13 @@ def exif_gps(path):
     return lat, lon
 
 
-banner("STAGE 4  second drive -> photo EXIF GPS -> place -> board -> Google Maps reviews")
+banner("STAGE 4  second drive -> photo EXIF GPS -> place -> board -> vidura")
 plat, plon = exif_gps(a.photo)
 print(f"GPS {plat:.5f}, {plon:.5f}  -> reverse geocode (human step): {a.place2}")
 place = board_place(board_search(a.place2)[0])
 for c in place["comments"]:
     print(f"  [{c['user']}] {c['text']}")
-print("\nFinal step is manual: open the place on Google Maps, Reviews tab, find the GDG{...} review.")
+real = [m for c in place["comments"] if c["user"] == "vidura" for m in re.findall(r"GDG\{[^}]+\}", c["text"])]
+print("\nFLAG:", real[0])
 
 

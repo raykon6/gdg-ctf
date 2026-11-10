@@ -1,4 +1,9 @@
-# The final Google Maps review (organisers post this)
+# The final Google Maps review: RETIRED
+
+> **2026-11-11:** Google removed the review (checked from a second account). The flag now
+> lives in vidura's comment on the Purana Qila pin of the Waypoint board, so the challenge no
+> longer depends on Google Maps. This file is kept only as a record of the original design.
+> If you ever re-post it, keep the board copy too.
 
 **Place:** Purana Qila, Mathura Road, New Delhi (28.6094, 77.2442). Open it on Google Maps
 and make sure it's the fort itself, not "Purana Qila Boat Club" or a nearby gate.
@@ -27,8 +32,7 @@ Walked the walls of the Old Fort at sunset. Enter through the Bara Darwaza, see 
   Purana Qila → Reviews → search `Chakravyuh`.
 - **Players need a Google account** for this last step. Say so in the event briefing.
 
-**Status (2026-11-10):** posted, and confirmed visible from a second Google account by
-searching `Chakravyuh`. Check again on event day.
+**Status:** posted 2026-11-10 and visible from a second account that day; gone on 2026-11-11.
 
 ## On event day
 

@@ -4,7 +4,7 @@
 |---|---|---|
 | Level | Beginner (advanced beginner) | Advanced |
 | Theme | a fictional lighthouse keeper's last log | Mahabharata: Abhimanyu's labyrinth |
-| Chain | PNG metadata → Base64/ROT13 → ZIP after IEND → spectrogram → XOR | LSB stego → XOR (challenge name) → coordinates → Waypoint board → Vigenère (Krishna's conch) → Drive #1 → Modbus pcap → register writes spell Drive #2 → photo EXIF GPS → Waypoint board → Google Maps review |
+| Chain | PNG metadata → Base64/ROT13 → ZIP after IEND → spectrogram → XOR | LSB stego → XOR (challenge name) → coordinates → Waypoint board → Vigenère (Krishna's conch) → Drive #1 → Modbus pcap → register writes spell Drive #2 → photo EXIF GPS → Waypoint board → trusted user |
 | Fake flags | none | 12, each obviously fake once read (e.g. `GDG{sh4kuni_s4ys_n1c3_try}`) |
 | Points | 150 | 500 (10 attempts) |
 | Player file | `beginner-kestrel-point/dist/postcard.png` | `advanced-chakravyuh/dist/chakravyuh.png` |
@@ -56,8 +56,6 @@ python hosting/server.py            # http://localhost:8080
   is synthetic Modbus on private addresses, and nothing in either challenge is
   executable or malicious.
 - The real places are public heritage sites (Jyotisar, Purana Qila), identified by
-  OSINT. All clue comments and fake flags live on the CTF's own Waypoint board. The only
-  third-party content is one Google Maps review holding the real flag, posted by the
-  organisers from one club account and deleted after the event (see
-  [GOOGLE_REVIEW.md](advanced-chakravyuh/GOOGLE_REVIEW.md)).
+  OSINT. All clue comments, fake flags and the final flag live on the CTF's own Waypoint
+  board. The only third-party pieces are two Google Drive links that the organisers own.
 - No real people's data. Usernames are Mahabharata characters, and the keeper is invented.

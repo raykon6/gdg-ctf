@@ -212,7 +212,7 @@ table([["Challenge", "Level", "Category", "Flag"],
 SP(10)
 P("Every command in this guide was run against the real challenge files, and every output shown is the "
   "tool's actual output. Screenshots are from the live challenge: the Waypoint board, both Google Drive "
-  "links, CyberChef, Google Maps and the final review.", "body")
+  "links, CyberChef and Google Maps.", "body")
 SP(8)
 P("<b>Tools used</b> (all free): exiftool, binwalk, unzip / 7-Zip, ffmpeg or Audacity, zsteg, tshark / Wireshark, "
   "Python 3, strings, CyberChef (gchq.github.io/CyberChef), Google Maps.", "body")
@@ -280,11 +280,10 @@ code("Ring 1  chakravyuh.png --blue LSB--> base64 --XOR 'Chakravyuh'--> 29 57'41
      "Ring 2  Google Maps: Jyotisar --> Waypoint board --> parth_sarathi --Vigenere PANCHAJANYA--> Drive #1\n"
      "Ring 3  ps7_capture.pcap --rogue 10.18.0.66, accepted FC6 writes to HR40--> Drive #2 link\n"
      "Ring 4  mayasabha.jpg --EXIF GPS--> 28 36'34\"N 77 14'39\"E = Purana Qila\n"
-     "Ring 5  Waypoint board: Purana Qila --> vidura: 'search the Google Maps reviews for the formation'\n"
-     "Ring 6  Google Maps: Purana Qila reviews --search 'Chakravyuh'--> FLAG")
+     "Ring 5  Waypoint board: Purana Qila --> trust vidura ('the one who never lies') --> FLAG")
 P("The theme carries the logic: Krishna (Parthasarathi, Arjuna's charioteer) shows the way; the Maya Sabha, "
   "the palace of illusions, is the OT plant and the photo; Shakuni's loaded dice are the fake flags; and "
-  "Vidura, who never lies, gives the final direction. Each of the 12 fake flags says it is fake once you read it.", "body")
+  "Vidura, who never lies, holds the way out. Each of the 12 fake flags says it is fake once you read it.", "body")
 
 # ---------------- Ring 1
 ring("Ring 1: the image", 4.6 * inch)
@@ -384,19 +383,16 @@ shot("map_purana.jpg", "Figure 11. Google Maps: 28\u00b036'34\"N 77\u00b014'39\"
 ring("Ring 5: the last board pin", 3.2 * inch)
 step("Step 14: Search Purana Qila on the Waypoint board", need=3.4 * inch)
 shot("board_search.jpg", "Figure 12. The board searches by place name only.", max_h=1.9 * inch)
-shot("board_purana.jpg", "Figure 13. Purana Qila pin: three fakes, plus vidura's direction to the Google Maps reviews.")
+shot("board_purana.jpg", "Figure 13. Purana Qila pin: three obvious fakes, and vidura holding the real flag.")
 P("shakuni " + mono("GDG{l04d3d_d1c3_r0ll3d_4g41n}") + ", karna_daanveer " + mono("GDG{k4rn4_g1v3s_0nly_f4k3s}") +
-  " and the look-alike <b>vidur</b> " + mono("GDG{f4k3_v1dur_f4k3_fl4g}") + " are all fake. The real <b>vidura</b> says: "
-  "<i>\"The last ring is not on this board. Open this place on Google Maps, sign in, and search its reviews for "
-  "the name of the formation you are trapped in.\"</i>")
-
-ring("Ring 6: the Google Maps review", 4.6 * inch)
-step("Step 15: Search the reviews for the formation's name", need=3.4 * inch)
-P("Open <b>Purana Qila</b> on Google Maps and sign in to Google (signed out, Maps shows only a few reviews and "
-  "blocks search). Go to <b>Reviews &rarr; Search reviews</b> and type <b>Chakravyuh</b>.")
-shot("google_review.png", "Figure 14. The review on Purana Qila holding the real flag.", max_h=2.6 * inch)
+  " and the look-alike <b>vidur</b> " + mono("GDG{f4k3_v1dur_f4k3_fl4g}") + " are all fake.")
+step("Step 15: Trust the one who never lies")
+P("The photo's description named him: <i>\"What the visitors say about this place is true. - Vidura\"</i>. "
+  "The real <b>vidura</b> (not the look-alike <b>vidur</b>) writes: <i>\"The Maya Sabha fooled Duryodhana, not you. "
+  "Abhimanyu never learned the way out of the Chakravyuh; you have. Take it, Partha:\"</i>")
+good(f"<b>Flag:</b> {mono('GDG{4bh1m4nyu_f0und_th3_3x1t_v14_m0dbu5}')}")
 step("Step 16: Submit", need=3.4 * inch)
-shot("portal_correct.jpg", "Figure 15. The CTF portal accepts the flag.", max_h=2.3 * inch)
+shot("portal_correct.jpg", "Figure 14. The CTF portal accepts the flag.", max_h=2.3 * inch)
 good(f"<b>Flag:</b> {mono('GDG{4bh1m4nyu_f0und_th3_3x1t_v14_m0dbu5}')}")
 
 # ---------------- Appendix
@@ -428,7 +424,7 @@ table([["What", "Value"],
        ["Data register", "Holding register 40 (dosing setpoint), FC6, accepted writes only"],
        ["Traps in the pcap", "3 TCP retransmissions, 1 busy exception (code 6), 1 rejected FC16 (code 2), HR42 honeypot, final restore write 125"],
        ["Second coordinates", "28&deg;36'34\"N 77&deg;14'39\"E = Purana Qila, New Delhi (photo EXIF GPS)"],
-       ["Final search", "Google Maps, Purana Qila, Reviews, search " + mono("Chakravyuh")]],
+       ["Final step", "Waypoint, Purana Qila pin, the comment by " + mono("vidura") + " (not the look-alike vidur)"]],
       [1.6 * inch, CONTENT_W - 1.6 * inch])
 
 

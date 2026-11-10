@@ -172,7 +172,6 @@ bundled Waypoint board is the intended design.
 
 - [ ] `build.py` run with the final `--drive-url` and `--drive2-url`
 - [ ] Drive #1 holds the **latest** `ps7_capture.pcap`, Drive #2 holds `mayasabha.jpg`, both links open signed out, sharing set to **Viewer**
-- [ ] The Purana Qila Google Maps review is found by searching `Chakravyuh` from a Google account **other than the one that posted it** ([GOOGLE_REVIEW.md](../advanced-chakravyuh/GOOGLE_REVIEW.md))
 - [ ] Both `solve.py` runs print the flags
 - [ ] `/waypoint/search?q=Jyotisar` and `?q=Purana` return the pins on the public URL
 - [ ] Submitting a decoy shows the decoy message, and the real flag shows "Correct"

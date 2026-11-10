@@ -36,12 +36,8 @@ flags, and you have 10 attempts.
 3. **OT:** In the capture only the stranger on the OT network matters, and only
    the writes the PLC accepted to the dosing setpoint. Drop TCP retransmissions and
    anything answered with an exception, then read each 16-bit register as two ASCII
-   characters. The photo you find next remembers where it was taken (EXIF GPS), and the
-   last word belongs to the visitors on Google Maps.
-
-## You will need
-
-A Google account, for the last step.
+   characters. The photo you find next remembers where it was taken (EXIF GPS). Take that
+   place back to the Waypoint board and trust the one who never lies.
 
 ## Tools that help (all free)
 

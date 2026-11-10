@@ -1,8 +1,8 @@
 # Chakravyuh: solution (organisers only)
 
-**Flag:** `GDG{4bh1m4nyu_f0und_th3_3x1t_v14_m0dbu5}`. It lives in **a Google Maps review of
-Purana Qila** that the organisers post (text in [GOOGLE_REVIEW.md](GOOGLE_REVIEW.md)).
-It appears nowhere else.
+**Flag:** `GDG{4bh1m4nyu_f0und_th3_3x1t_v14_m0dbu5}`. It is in **vidura's comment on the Purana
+Qila pin** of the Waypoint board. (It was first planned as a Google Maps review, but
+Google removed the review, so the flag moved to the board; see [GOOGLE_REVIEW.md](GOOGLE_REVIEW.md).)
 
 ## The seven rings at a glance
 
@@ -34,10 +34,7 @@ chakravyuh.png
               ▼
  RING 5  Purana Qila, New Delhi (Waypoint pin)
           ├─ shakuni / karna_daanveer / vidur (look-alike) ... three fakes
-          └─ vidura: "The last ring is not on this board. Open this place on Google Maps,
-                      sign in, and search its reviews for the name of the formation..."
-              ▼
- RING 6  Google Maps → Purana Qila → Reviews ............. REAL FLAG
+          └─ vidura ("the one who never lies") .............. REAL FLAG
 ```
 
 The Mahabharata theme carries the logic. Krishna (Parthasarathi, Arjuna's charioteer)
@@ -176,18 +173,14 @@ Waypoint gives:
 | shakuni | `GDG{l04d3d_d1c3_r0ll3d_4g41n}`: fake |
 | vidur (look-alike) | `GDG{f4k3_v1dur_f4k3_fl4g}`: fake |
 | karna_daanveer | `GDG{k4rn4_g1v3s_0nly_f4k3s}`: fake |
-| **vidura** | "The last ring is not on this board. Open this place on Google Maps, sign in, and search its reviews for the name of the formation you are trapped in." |
+| **vidura** | "The Maya Sabha fooled Duryodhana, not you. Abhimanyu never learned the way out of the Chakravyuh; you have. Take it, Partha: `GDG{4bh1m4nyu_f0und_th3_3x1t_v14_m0dbu5}`" (**real**) |
 
 Next door, the National Zoological Park pin has `GDG{t00_f4r_fr0m_1ndr4pr4sth4}`, a fake
 for anyone who stopped at roughly the right coordinates.
 
-## Ring 6: Google Maps reviews
-
-Open **Purana Qila** on Google Maps and **sign in to Google**. Signed out, Maps shows only
-a few "most relevant" reviews out of 33,000+, and both search and sort trigger a
-sign-in wall. Then go to **Reviews → search reviews**, and search `Chakravyuh` (vidura:
-*"search its reviews for the name of the formation you are trapped in"*). The organisers'
-review contains **`GDG{4bh1m4nyu_f0und_th3_3x1t_v14_m0dbu5}`**.
+Which one to trust? The photo's description, *"What the visitors say about this place is
+true. - Vidura"*, names him. The look-alike `vidur` and the other three flags all read as
+obvious traps. The real flag is **`GDG{4bh1m4nyu_f0und_th3_3x1t_v14_m0dbu5}`**.
 
 ## All fakes (12)
 
@@ -215,7 +208,7 @@ loaded dice"*.
 cd src
 python build.py --drive-url  "<Drive #1 folder link>" \
                 --drive2-url "<Drive #2 folder link>"
-python solve.py --pcap ../drive/ps7_capture.pcap      # runs rings 1-5 and prints the board message
+python solve.py --pcap ../drive/ps7_capture.pcap      # runs every ring and prints the flag
 ```
 
 `build.py` keeps an existing `drive2/mayasabha.jpg` so the uploaded copy stays identical.
@@ -233,6 +226,6 @@ the server so it loads the new board text.
 - The pcap is fully synthetic: private 10.18.0.0/24 addresses, locally administered
   MACs, a fictional plant. Nothing in it is runnable.
 - The photo is drawn by the build script. Its GPS points to a public monument.
-- The one Google review is posted by the organisers on a public heritage site. Google
-  can remove off-topic reviews at any time, so check it's still visible on event day.
-  If it's gone, the fallback is to put the flag in vidura's Waypoint comment.
+- No third-party platform holds any part of the challenge apart from the two Google Drive
+  links. The planned Google Maps review was removed by Google (2026-11-11), and the flag now
+  lives on the CTF's own Waypoint board.
