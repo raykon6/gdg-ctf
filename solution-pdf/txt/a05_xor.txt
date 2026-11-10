@@ -1,0 +1,7 @@
+$ python3 -c "import base64; d=base64.b64decode('PxRBKDogPSs0Pho9KUtIQQIREEglARMYBkEEEBsPYxQdYSYJE1kWACIaCAQGBBMLVRszBwoOUhYeHAcNYxwJDlIOGh1VCiIGGAocQQUNHAQvSBIfEw8SClticVGj20dWUU1ESg1IVl2w0UJPUll1SiRhPwAGClUEKg1PSyAEFx1VHCsNQTwTGAYWHAY3SAMEExMSWRoGYxwJAgFBNS0zSDANEx0XE1ZRWh8iEREEGw8CUFtiDAYNElIRFwsBABwbABkTFR4QVRszDQAAAUECERBINxoUHxpPfA=='); k=b'Chakravyuh'; print(bytes(c ^ k[i%len(k)] for i,c in enumerate(d)).decode())"
+|| CHAKRAVYUH : the first ring ||
+The charioteer spoke where the old banyan still stands.
+29°57'41"N 76°46'16"E
+Maps lie. Read the Waypoint board on this CTF server (/waypoint).
+Only parth_sarathi speaks the truth.
+

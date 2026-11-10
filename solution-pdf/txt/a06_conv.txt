@@ -1,0 +1,13 @@
+$ tshark -r ps7_capture.pcap -q -z conv,ip | sed -n '1,12p'
+tshark: Couldn't load plugin 'falco-events.so': /usr/lib/x86_64-linux-gnu/libgrpc++.so.1.51: undefined symbol: _Z29grpc_json_get_string_propertyRKN9grpc_core4JsonEPKcPN4absl7debian96StatusE
+================================================================================
+IPv4 Conversations
+Filter:<No Filter>
+                                               |       <-      | |       ->      | |     Total     |    Relative    |   Duration   |
+                                               | Frames  Bytes | | Frames  Bytes | | Frames  Bytes |      Start     |              |
+10.18.0.20           <-> 10.18.0.10              1263 91 kB        2526 159 kB       3789 250 kB        0.000000000       420.1180
+10.18.0.20           <-> 10.18.0.11               212 15 kB         424 26 kB         636 42 kB         0.011000000       420.0804
+10.18.0.30           <-> 10.18.0.10                86 6,420 bytes     172 10 kB         258 17 kB         0.533000000       419.6103
+10.18.0.30           <-> 10.18.0.11                86 6,420 bytes     172 10 kB         258 17 kB         0.541000000       419.4638
+10.18.0.66           <-> 10.18.0.10                67 4,431 bytes     137 8,661 bytes     204 13 kB       137.180000000       125.0898
+================================================================================

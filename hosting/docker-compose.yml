@@ -1,0 +1,13 @@
+# Run from the gdg-ctf folder:   docker compose -f hosting/docker-compose.yml up -d --build
+services:
+  gdg-ctf:
+    build:
+      context: ..
+      dockerfile: hosting/Dockerfile
+    ports:
+      - "8080:8080"
+    environment:
+      DRIVE_TOKEN: "1Mz7vYhAbhimanyu-PS7rk"   # must match the token inside the --drive-url you built with
+      ENABLE_PORTAL: "1"                      # set "0" if CTFd hosts the challenges and flags
+    read_only: true
+    restart: unless-stopped

@@ -1,0 +1,11 @@
+$ cat storeroom/logbook.txt
+KESTREL POINT LIGHT - KEEPER'S LOGBOOK (fictional)
+==================================================
+12 Oct  Wind NW 4. Lens cleaned. Lamp lit 17:42.
+13 Oct  Fog from 03:10. Horn sounded for 5 hrs.
+14 Oct  Supply boat late. Paraffin low.
+15 Oct  Fog again. I have put the last entry somewhere safe.
+        Only someone who can SEE the foghorn will read it.
+
+LAST ENTRY (scrambled):
+0b050a2b20702a38381e39387f1e3a64351e39383e713837241e39387f1e216435723f2331

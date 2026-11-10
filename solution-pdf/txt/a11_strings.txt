@@ -1,0 +1,2 @@
+$ strings -n 8 ps7_capture.pcap | grep GDG
+ GDG{th3_plc_r3j3ct3d_th1s_l13}

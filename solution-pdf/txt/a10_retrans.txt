@@ -1,0 +1,5 @@
+$ tshark -r ps7_capture.pcap -Y 'tcp.analysis.retransmission' -T fields -e frame.number -e ip.src -e tcp.seq -e frame.len
+tshark: Couldn't load plugin 'falco-events.so': /usr/lib/x86_64-linux-gnu/libgrpc++.so.1.51: undefined symbol: _Z29grpc_json_get_string_propertyRKN9grpc_core4JsonEPKcPN4absl7debian96StatusE
+2615	10.18.0.66	478	66
+2922	10.18.0.66	634	66
+3142	10.18.0.66	730	66

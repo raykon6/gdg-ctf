@@ -1,0 +1,6 @@
+$ unzip -P keeper_of_the_light postcard.png
+Archive:  postcard.png
+warning [postcard.png]:  16729 extra bytes at beginning or within zipfile
+  (attempting to process anyway)
+  inflating: storeroom/foghorn.wav   
+  inflating: storeroom/logbook.txt   

@@ -1,0 +1,2 @@
+$ echo 'VGhlIHN0b3Jlcm9vbSBpcyBsb2NrZWQuIFRoZSBwYXNzd29yZCwgaW4gdGhlIG9sZCBrZWVwZXIncyBjaXBoZXIgKHJvdDEzKTogeHJyY3JlX2JzX2d1cl95dnR1Zw==' | base64 -d; echo
+The storeroom is locked. The password, in the old keeper's cipher (rot13): xrrcre_bs_gur_yvtug

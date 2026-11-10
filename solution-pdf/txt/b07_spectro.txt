@@ -1,0 +1,2 @@
+$ ffmpeg -loglevel error -y -i storeroom/foghorn.wav -lavfi showspectrumpic=s=1000x400 spectrogram.png && echo saved spectrogram.png
+saved spectrogram.png

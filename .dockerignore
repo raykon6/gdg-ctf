@@ -1,0 +1,10 @@
+# Keep solutions, build scripts and docs out of the Docker build context.
+# The image only needs: hosting/server.py, hosting/data, the player files and the pcap.
+**/SOLUTION.md
+**/GOOGLE_REVIEW.md
+**/src
+solution-pdf
+GDG_CTF_Solutions.pdf
+hosting/ctfd
+.git
+**/__pycache__

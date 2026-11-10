@@ -1,0 +1,23 @@
+{
+ "chakravyuh": {
+  "flag": "GDG{4bh1m4nyu_f0und_th3_3x1t_v14_m0dbu5}",
+  "decoys": {
+   "GDG{dr0n4_s4ys_l00k_d33p3r}": "PNG tEXt Comment",
+   "GDG{wr0ng_ch4nn3l_p4rth4}": "PNG red-channel LSB",
+   "GDG{sh4kuni_s4ys_n1c3_try}": "Waypoint / Jyotisar (shakuni)",
+   "GDG{duryodh4n_n3v3r_t3lls_th3_truth}": "Waypoint / Jyotisar (duryodhan, base64)",
+   "GDG{wr0ng_w4t3r_sh4kun1_w1ns}": "Waypoint / Brahma Sarovar (shakuni)",
+   "GDG{th3_plc_r3j3ct3d_th1s_l13}": "pcap: rejected FC16 write (strings bait)",
+   "GDG{m4y4_s4bh4_1llus10n_n0t_r34l}": "pcap: honeypot holding register 42",
+   "GDG{y0u_f3ll_1n_th3_m4y4_p00l}": "photo EXIF XPComment",
+   "GDG{l04d3d_d1c3_r0ll3d_4g41n}": "Waypoint / Purana Qila (shakuni)",
+   "GDG{k4rn4_g1v3s_0nly_f4k3s}": "Waypoint / Purana Qila (karna_daanveer)",
+   "GDG{f4k3_v1dur_f4k3_fl4g}": "Waypoint / Purana Qila (vidur - lookalike user)",
+   "GDG{t00_f4r_fr0m_1ndr4pr4sth4}": "Waypoint / National Zoological Park (shakuni)"
+  }
+ },
+ "kestrel-point": {
+  "flag": "GDG{l1ght_th3_w4y_thr0ugh_th3_l4y3rs}",
+  "decoys": {}
+ }
+}

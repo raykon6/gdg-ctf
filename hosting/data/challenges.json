@@ -1,0 +1,44 @@
+{
+ "challenges": [
+  {
+   "id": "kestrel-point",
+   "name": "Postcard from Kestrel Point",
+   "level": "Beginner",
+   "category": "Forensics / Stego",
+   "points": 150,
+   "story": "A postcard has arrived at the GDG club room from the keeper of Kestrel Point, a lighthouse that exists only in this CTF. In his last letter he swore he had written his final log entry \"where only a sharp eye and a sharp ear can find it\". The postcard is all we have. Find the keeper's last entry.",
+   "files": [
+    {
+     "name": "postcard.png",
+     "path": "beginner-kestrel-point/dist/postcard.png"
+    }
+   ],
+   "hints": [
+    "A picture is more than its pixels. Read the file's metadata, and check what comes after the image data ends.",
+    "The Comment field is Base64, and the password inside it is ROT13'd. The bytes after the PNG IEND chunk start with PK, so it's a ZIP: carve it or just open the PNG with 7-Zip.",
+    "Open foghorn.wav in Audacity (Spectrogram view) or Sonic Visualiser and look between 3 and 9 kHz. Then use CyberChef: From Hex, then XOR with that key (UTF8)."
+   ],
+   "max_attempts": 0
+  },
+  {
+   "id": "chakravyuh",
+   "name": "Chakravyuh",
+   "level": "Advanced",
+   "category": "Stego + OSINT + OT/ICS",
+   "points": 500,
+   "story": "Dronacharya has laid the Chakravyuh. Abhimanyu learned how to break in while still in his mother's womb, but never heard how to break out. Seven rings of illusion stand between you and the exit. Somewhere in the Mayasabha Jal Kendra (a water works that exists only in this CTF) a rogue machine has been whispering to a PLC. Follow the charioteer and trust only those he tells you to trust. Shakuni has scattered loaded dice everywhere: this challenge contains many fake flags (each one admits it is fake once you read it) and you have 10 attempts. The first ring opens with the name of this challenge.",
+   "files": [
+    {
+     "name": "chakravyuh.png",
+     "path": "advanced-chakravyuh/dist/chakravyuh.png"
+    }
+   ],
+   "hints": [
+    "The image carries more than one message. Check each colour plane's lowest bit (zsteg, StegOnline, or CyberChef 'Extract LSB'). Not everything shaped like a flag is one. The XOR key is the challenge name, exactly as written.",
+    "The first coordinates give you a place name. Search that name on the Waypoint board (/waypoint), which only searches by name. The charioteer's conch has a name, and that name is a Vigenere key.",
+    "In the capture only the stranger on the OT network matters, and only the writes the PLC accepted to the dosing setpoint. Drop TCP retransmissions and anything answered with an exception, then read each 16-bit register as two ASCII characters. The photo you find next remembers where it was taken (EXIF GPS), and the last word belongs to the visitors on Google Maps."
+   ],
+   "max_attempts": 10
+  }
+ ]
+}

@@ -1,0 +1,20 @@
+# Render Blueprint: one free web service running the whole CTF
+# (portal + downloads + hints + flag checker + Waypoint board).
+# Render dashboard -> New -> Blueprint -> pick this repo.
+services:
+  - type: web
+    name: gdg-ctf
+    runtime: docker
+    plan: free
+    region: singapore              # closest Render region to India
+    dockerfilePath: ./hosting/Dockerfile
+    dockerContext: .
+    healthCheckPath: /healthz
+    autoDeploy: true               # redeploys on every push to the main branch
+    envVars:
+      - key: HOST
+        value: 0.0.0.0
+      - key: PORT
+        value: "8080"
+      - key: ENABLE_PORTAL
+        value: "1"

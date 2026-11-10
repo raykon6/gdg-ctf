@@ -1,0 +1,32 @@
+# ctfcli spec. From hosting/ctfd:  ctf challenge install chakravyuh
+# The Waypoint board + drive page must still be served (server.py with ENABLE_PORTAL=0).
+name: "Chakravyuh"
+author: "GDG CTF team"
+category: "Misc (Stego + OSINT + OT)"
+description: |
+  Dronacharya has laid the Chakravyuh. Abhimanyu learned how to break in while still
+  in his mother's womb, but never heard how to break out. Seven rings of illusion stand
+  between you and the exit. Somewhere in the Mayasabha Jal Kendra (a water works that
+  exists only in this CTF) a rogue machine has been whispering to a PLC.
+
+  Follow the charioteer and trust only those he tells you to trust. Shakuni has
+  scattered loaded dice everywhere: there are many fake flags and you have 10 attempts.
+  The first ring opens with the name of this challenge.
+
+  Waypoint board: https://YOUR-HOST/waypoint/
+value: 500
+type: standard
+attempts: 10
+flags:
+  - GDG{4bh1m4nyu_f0und_th3_3x1t_v14_m0dbu5}
+files:
+  - dist/chakravyuh.png      # copy advanced-chakravyuh/dist/chakravyuh.png here first
+hints:
+  - content: "The image carries more than one message. Check each colour plane's lowest bit (zsteg / StegOnline / CyberChef Extract LSB). The XOR key is the challenge name, exactly as written."
+    cost: 50
+  - content: "The first coordinates give you a place name. Search that name on the Waypoint board, which only searches by name. The charioteer's conch has a name, and that name is a Vigenere key."
+    cost: 100
+  - content: "Only the stranger on the OT network matters, and only the writes the PLC accepted to the dosing setpoint. Drop TCP retransmissions and anything answered with an exception, then read each 16-bit register as two ASCII characters. The photo you find next remembers where it was taken (EXIF GPS), and the last word belongs to the visitors on Google Maps."
+    cost: 150
+state: visible
+version: "0.1"

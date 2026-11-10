@@ -1,0 +1,24 @@
+# ctfcli spec. From hosting/ctfd:  ctf challenge install kestrel-point
+name: "Postcard from Kestrel Point"
+author: "GDG CTF team"
+category: "Forensics"
+description: |
+  A postcard has arrived at the GDG club room from the keeper of Kestrel Point,
+  a lighthouse that exists only in this CTF. In his last letter he swore he had
+  written his final log entry "where only a sharp eye and a sharp ear can find it".
+  Find the keeper's last entry. Flag format: GDG{...}
+value: 150
+type: standard
+flags:
+  - GDG{l1ght_th3_w4y_thr0ugh_th3_l4y3rs}
+files:
+  - dist/postcard.png        # copy beginner-kestrel-point/dist/postcard.png here first
+hints:
+  - content: "A picture is more than its pixels. Read the metadata, and check what comes after the image data ends."
+    cost: 0
+  - content: "The Comment is Base64 and the password inside is ROT13'd. After the PNG IEND chunk the bytes start with PK, so it's a ZIP. 7-Zip opens the PNG directly."
+    cost: 25
+  - content: "Open foghorn.wav in Audacity (Spectrogram view) and look between 3 and 9 kHz. Then use CyberChef: From Hex, then XOR with that key (UTF8)."
+    cost: 50
+state: visible
+version: "0.1"

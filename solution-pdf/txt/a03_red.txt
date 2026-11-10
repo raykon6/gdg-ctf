@@ -1,0 +1,2 @@
+$ echo 'R0RHe3dyMG5nX2NoNG5uM2xfcDRydGg0fQ==' | base64 -d; echo
+GDG{wr0ng_ch4nn3l_p4rth4}

@@ -1,0 +1,10 @@
+$ binwalk postcard.png
+
+DECIMAL       HEXADECIMAL     DESCRIPTION
+--------------------------------------------------------------------------------
+0             0x0             PNG image, 900 x 560, 8-bit/color RGB, non-interlaced
+302           0x12E           Zlib compressed data, best compression
+16729         0x4159          Zip archive data, encrypted at least v2.0 to extract, compressed size: 768565, uncompressed size: 793844, name: storeroom/foghorn.wav
+785345        0xBFBC1         Zip archive data, encrypted at least v2.0 to extract, compressed size: 313, uncompressed size: 459, name: storeroom/logbook.txt
+785843        0xBFDB3         End of Zip archive, footer length: 22
+

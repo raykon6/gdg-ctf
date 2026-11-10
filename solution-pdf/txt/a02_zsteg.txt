@@ -1,0 +1,3 @@
+$ zsteg chakravyuh.png 2>/dev/null | grep -E 'b1,(r|b),lsb,xy'
+b1,r,lsb,xy         .. text: "R0RHe3dyMG5nX2NoNG5uM2xfcDRydGg0fQ=="
+b1,r,msb,xy         .. b1,g,lsb,xy         .. b1,g,msb,xy         .. b1,b,lsb,xy         .. text: "PxRBKDogPSs0Pho9KUtIQQIREEglARMYBkEEEBsPYxQdYSYJE1kWACIaCAQGBBMLVRszBwoOUhYeHAcNYxwJDlIOGh1VCiIGGAocQQUNHAQvSBIfEw8SClticVGj20dWUU1ESg1IVl2w0UJPUll1SiRhPwAGClUEKg1PSyAEFx1VHCsNQTwTGAYWHAY3SAMEExMSWRoGYxwJAgFBNS0zSDANEx0XE1ZRWh8iEREEGw8CUFtiDAYNElIRFwsBABwb"

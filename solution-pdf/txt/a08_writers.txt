@@ -1,0 +1,10 @@
+$ tshark -r ps7_capture.pcap -Y 'modbus.func_code==6 || modbus.func_code==16' -T fields -e ip.src -e modbus.func_code -e modbus.reference_num | sort | uniq -c
+tshark: Couldn't load plugin 'falco-events.so': /usr/lib/x86_64-linux-gnu/libgrpc++.so.1.51: undefined symbol: _Z29grpc_json_get_string_propertyRKN9grpc_core4JsonEPKcPN4absl7debian96StatusE
+      1 10.18.0.10	16	
+      1 10.18.0.10	6	
+     43 10.18.0.10	6	40
+     18 10.18.0.10	6	42
+      1 10.18.0.20	6	40
+      1 10.18.0.66	16	3840
+     43 10.18.0.66	6	40
+     18 10.18.0.66	6	42

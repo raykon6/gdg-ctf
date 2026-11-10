@@ -1,0 +1,8 @@
+$ exiftool postcard.png | grep -E 'File Size|Image Size|Title|Author|Comment|Software|Warning'
+File Size                       : 786 kB
+Title                           : Greetings from Kestrel Point
+Author                          : The Keeper
+Comment                         : VGhlIHN0b3Jlcm9vbSBpcyBsb2NrZWQuIFRoZSBwYXNzd29yZCwgaW4gdGhlIG9sZCBrZWVwZXIncyBjaXBoZXIgKHJvdDEzKTogeHJyY3JlX2JzX2d1cl95dnR1Zw==
+Software                        : LighthouseCam 1.0
+Warning                         : [minor] Trailer data after PNG IEND chunk
+Image Size                      : 900x560

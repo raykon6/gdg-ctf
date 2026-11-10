@@ -1,0 +1,6 @@
+$ exiftool chakravyuh.png | grep -E 'Image Size|Title|Author|Comment|Description'
+Title                           : Chakravyuh
+Author                          : Dronacharya
+Comment                         : GDG{dr0n4_s4ys_l00k_d33p3r}
+Description                     : Abhimanyu knew the way in. Do you know the way out?
+Image Size                      : 1000x1000

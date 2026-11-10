@@ -1,0 +1,2 @@
+$ python3 -c "ct=bytes.fromhex('0b050a2b20702a38381e39387f1e3a64351e39383e713837241e39387f1e216435723f2331'); print(bytes(c ^ b'LAMP'[i%4] for i,c in enumerate(ct)).decode())"
+GDG{l1ght_th3_w4y_thr0ugh_th3_l4y3rs}

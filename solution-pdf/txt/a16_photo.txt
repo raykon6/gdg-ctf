@@ -1,0 +1,10 @@
+$ exiftool mayasabha.jpg | grep -E 'Image Size|Make|Camera Model|Artist|Description|XP Comment|GPS Latitude  |GPS Longitude  |GPS Position'
+Image Description               : What the visitors say about this place is true. - Vidura
+Make                            : Mayasabha Jal Kendra
+Camera Model Name               : PS7 shift camera
+Artist                          : Maya Danava
+XP Comment                      : GDG{y0u_f3ll_1n_th3_m4y4_p00l}
+Image Size                      : 1600x1000
+GPS Latitude                    : 28 deg 36' 34.00" N
+GPS Longitude                   : 77 deg 14' 39.00" E
+GPS Position                    : 28 deg 36' 34.00" N, 77 deg 14' 39.00" E
